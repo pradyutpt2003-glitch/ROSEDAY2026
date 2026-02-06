@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Happy Rose Day</title>
+
+<style>
+body {
+  margin:0;
+  height:100vh;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  background: linear-gradient(135deg,#ff6a88,#ff99ac);
+  font-family: Arial, sans-serif;
+}
+
+.card {
+  width: 380px;
+  border-radius: 18px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+  position: relative;
+}
+
+.card img {
+  width:100%;
+  height:480px;
+  object-fit:cover;
+}
+
+.overlay {
+  position:absolute;
+  inset:0;
+  background: linear-gradient(to top, rgba(0,0,0,0.7), transparent);
+}
+
+.text {
+  position:absolute;
+  bottom:15px;
+  width:100%;
+  text-align:center;
+  color:white;
+  padding:10px;
+}
+
+h1 {
+  margin:0;
+  font-size:26px;
+  color:#ffd6e0;
+}
+
+.name {
+  font-size:18px;
+  font-weight:bold;
+  margin-top:5px;
+}
+
+.msg {
+  font-size:13px;
+  margin-top:6px;
+}
+
+.rose {
+  position:absolute;
+  font-size:32px;
+  animation: float 3s infinite ease-in-out;
+}
+
+.r1 { top:10px; left:15px; }
+.r2 { top:10px; right:15px; }
+.r3 { top:70px; right:30px; }
+
+@keyframes float {
+  0% { transform:translateY(0); }
+  50% { transform:translateY(-12px); }
+  100% { transform:translateY(0); }
+}
+</style>
+</head>
+
+<body>
+
+<div class="card">
+  <!-- Put your photo file here -->
+  <img src="priyanka.jpg">
+
+  <div class="overlay"></div>
+
+  <div class="rose r1">🌹</div>
+  <div class="rose r2">🌹</div>
+  <div class="rose r3">🌹</div>
+
+  <div class="text">
+    <h1>Happy Rose Day 🌹</h1>
+    <div class="name">PRIYANKA (HEBLI)</div>
+    <div class="msg">
+      Just like a rose, rise above every thorn that comes your way!
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
